@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_draw"
+        android:icon="@drawable/ic_brush"
+        android:title="@string/draw_in_ar" />
+
+    <item
+        android:id="@+id/nav_lessons"
+        android:icon="@drawable/ic_star"
+        android:title="@string/lessons" />
+
+    <item
+        android:id="@+id/nav_gallery"
+        android:icon="@drawable/ic_grid_on"
+        android:title="@string/gallery" />
+
+    <item
+        android:id="@+id/nav_settings"
+        android:icon="@drawable/ic_settings"
+        android:title="@string/settings" />
+
+</menu>

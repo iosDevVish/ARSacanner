@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/content_padding"
+    app:cardCornerRadius="@dimen/bottom_sheet_radius"
+    app:cardElevation="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/content_padding">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/colors"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/onSurface"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/item_spacing" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvColors"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="@dimen/section_spacing"
+            android:background="@color/divider" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/brush_opacity"
+            android:textSize="16sp"
+            android:textColor="@color/onSurface"
+            android:layout_marginBottom="@dimen/item_spacing" />
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/sliderOpacity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:valueFrom="0.1"
+            android:valueTo="1.0"
+            android:value="1.0"
+            android:stepSize="0.1" />
+
+        <TextView
+            android:id="@+id/tvOpacity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Opacity: 100%"
+            android:textSize="14sp"
+            android:textColor="@color/onSurfaceVariant"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/item_spacing"
+            android:layout_marginBottom="@dimen/section_spacing" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="@dimen/section_spacing"
+            android:background="@color/divider" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/recent_colors"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/onSurface"
+            android:layout_marginBottom="@dimen/item_spacing" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvRecentColors"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false" />
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_lessons"
+        android:icon="@drawable/ic_star"
+        android:title="@string/toolbar_lessons"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_guides"
+        android:icon="@drawable/ic_grid_on"
+        android:title="@string/toolbar_guides"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@drawable/ic_settings"
+        android:title="@string/settings"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_gallery"
+        android:title="@string/gallery"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_help"
+        android:title="@string/tutorial_welcome"
+        app:showAsAction="never" />
+
+</menu>

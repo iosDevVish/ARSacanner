@@ -1,0 +1,74 @@
+[
+    {
+        "merged": "com.ardrawing.ardrawing.app-mergeDebugResources-84:/layout/item_lesson.xml",
+        "source": "com.ardrawing.ardrawing.app-main-87:/layout/item_lesson.xml"
+    },
+    {
+        "merged": "com.ardrawing.ardrawing.app-mergeDebugResources-84:/layout/layout_lesson_selector.xml",
+        "source": "com.ardrawing.ardrawing.app-main-87:/layout/layout_lesson_selector.xml"
+    },
+    {
+        "merged": "com.ardrawing.ardrawing.app-mergeDebugResources-84:/layout/dialog_settings.xml",
+        "source": "com.ardrawing.ardrawing.app-main-87:/layout/dialog_settings.xml"
+    },
+    {
+        "merged": "com.ardrawing.ardrawing.app-mergeDebugResources-84:/layout/activity_main.xml",
+        "source": "com.ardrawing.ardrawing.app-main-87:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.ardrawing.ardrawing.app-mergeDebugResources-84:/layout/dialog_settings_simple.xml",
+        "source": "com.ardrawing.ardrawing.app-main-87:/layout/dialog_settings_simple.xml"
+    },
+    {
+        "merged": "com.ardrawing.ardrawing.app-mergeDebugResources-84:/layout/layout_brush_size.xml",
+        "source": "com.ardrawing.ardrawing.app-main-87:/layout/layout_brush_size.xml"
+    },
+    {
+        "merged": "com.ardrawing.ardrawing.app-mergeDebugResources-84:/layout/activity_drawing_gallery.xml",
+        "source": "com.ardrawing.ardrawing.app-main-87:/layout/activity_drawing_gallery.xml"
+    },
+    {
+        "merged": "com.ardrawing.ardrawing.app-mergeDebugResources-84:/layout/layout_color_picker.xml",
+        "source": "com.ardrawing.ardrawing.app-main-87:/layout/layout_color_picker.xml"
+    },
+    {
+        "merged": "com.ardrawing.ardrawing.app-mergeDebugResources-84:/layout/activity_drawing_viewer.xml",
+        "source": "com.ardrawing.ardrawing.app-main-87:/layout/activity_drawing_viewer.xml"
+    },
+    {
+        "merged": "com.ardrawing.ardrawing.app-mergeDebugResources-84:/layout/item_color_swatch.xml",
+        "source": "com.ardrawing.ardrawing.app-main-87:/layout/item_color_swatch.xml"
+    },
+    {
+        "merged": "com.ardrawing.ardrawing.app-mergeDebugResources-84:/layout/layout_guide_selector.xml",
+        "source": "com.ardrawing.ardrawing.app-main-87:/layout/layout_guide_selector.xml"
+    },
+    {
+        "merged": "com.ardrawing.ardrawing.app-mergeDebugResources-84:/layout/dialog_save_drawing.xml",
+        "source": "com.ardrawing.ardrawing.app-main-87:/layout/dialog_save_drawing.xml"
+    },
+    {
+        "merged": "com.ardrawing.ardrawing.app-mergeDebugResources-84:/layout/item_guide.xml",
+        "source": "com.ardrawing.ardrawing.app-main-87:/layout/item_guide.xml"
+    },
+    {
+        "merged": "com.ardrawing.ardrawing.app-mergeDebugResources-84:/layout/layout_drawing_toolbar.xml",
+        "source": "com.ardrawing.ardrawing.app-main-87:/layout/layout_drawing_toolbar.xml"
+    },
+    {
+        "merged": "com.ardrawing.ardrawing.app-mergeDebugResources-84:/layout/item_drawing.xml",
+        "source": "com.ardrawing.ardrawing.app-main-87:/layout/item_drawing.xml"
+    },
+    {
+        "merged": "com.ardrawing.ardrawing.app-mergeDebugResources-84:/layout/activity_lesson.xml",
+        "source": "com.ardrawing.ardrawing.app-main-87:/layout/activity_lesson.xml"
+    },
+    {
+        "merged": "com.ardrawing.ardrawing.app-mergeDebugResources-84:/layout/activity_lesson_step.xml",
+        "source": "com.ardrawing.ardrawing.app-main-87:/layout/activity_lesson_step.xml"
+    },
+    {
+        "merged": "com.ardrawing.ardrawing.app-mergeDebugResources-84:/layout/item_lesson_step.xml",
+        "source": "com.ardrawing.ardrawing.app-main-87:/layout/item_lesson_step.xml"
+    }
+]

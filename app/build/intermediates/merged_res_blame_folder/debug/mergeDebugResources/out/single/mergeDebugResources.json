@@ -1,0 +1,298 @@
+[
+    {
+        "merged": "com.ardrawing.ardrawing.app-debug-85:/layout_dialog_settings.xml.flat",
+        "source": "com.ardrawing.ardrawing.app-main-87:/layout/dialog_settings.xml"
+    },
+    {
+        "merged": "com.ardrawing.ardrawing.app-debug-85:/mipmap-hdpi_ic_launcher.xml.flat",
+        "source": "com.ardrawing.ardrawing.app-main-87:/mipmap-hdpi/ic_launcher.xml"
+    },
+    {
+        "merged": "com.ardrawing.ardrawing.app-debug-85:/layout_layout_drawing_toolbar.xml.flat",
+        "source": "com.ardrawing.ardrawing.app-main-87:/layout/layout_drawing_toolbar.xml"
+    },
+    {
+        "merged": "com.ardrawing.ardrawing.app-debug-85:/layout_item_drawing.xml.flat",
+        "source": "com.ardrawing.ardrawing.app-main-87:/layout/item_drawing.xml"
+    },
+    {
+        "merged": "com.ardrawing.ardrawing.app-debug-85:/drawable_ic_eraser.xml.flat",
+        "source": "com.ardrawing.ardrawing.app-main-87:/drawable/ic_eraser.xml"
+    },
+    {
+        "merged": "com.ardrawing.ardrawing.app-debug-85:/drawable_ic_line.xml.flat",
+        "source": "com.ardrawing.ardrawing.app-main-87:/drawable/ic_line.xml"
+    },
+    {
+        "merged": "com.ardrawing.ardrawing.app-debug-85:/layout_layout_guide_selector.xml.flat",
+        "source": "com.ardrawing.ardrawing.app-main-87:/layout/layout_guide_selector.xml"
+    },
+    {
+        "merged": "com.ardrawing.ardrawing.app-debug-85:/xml_backup_rules.xml.flat",
+        "source": "com.ardrawing.ardrawing.app-main-87:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.ardrawing.ardrawing.app-debug-85:/drawable_ic_rule_of_thirds.xml.flat",
+        "source": "com.ardrawing.ardrawing.app-main-87:/drawable/ic_rule_of_thirds.xml"
+    },
+    {
+        "merged": "com.ardrawing.ardrawing.app-debug-85:/drawable_ic_spiral.xml.flat",
+        "source": "com.ardrawing.ardrawing.app-main-87:/drawable/ic_spiral.xml"
+    },
+    {
+        "merged": "com.ardrawing.ardrawing.app-debug-85:/drawable_ic_undo.xml.flat",
+        "source": "com.ardrawing.ardrawing.app-main-87:/drawable/ic_undo.xml"
+    },
+    {
+        "merged": "com.ardrawing.ardrawing.app-debug-85:/layout_activity_drawing_viewer.xml.flat",
+        "source": "com.ardrawing.ardrawing.app-main-87:/layout/activity_drawing_viewer.xml"
+    },
+    {
+        "merged": "com.ardrawing.ardrawing.app-debug-85:/mipmap-xxxhdpi_ic_launcher.xml.flat",
+        "source": "com.ardrawing.ardrawing.app-main-87:/mipmap-xxxhdpi/ic_launcher.xml"
+    },
+    {
+        "merged": "com.ardrawing.ardrawing.app-debug-85:/drawable_ic_check.xml.flat",
+        "source": "com.ardrawing.ardrawing.app-main-87:/drawable/ic_check.xml"
+    },
+    {
+        "merged": "com.ardrawing.ardrawing.app-debug-85:/drawable_ic_golden_ratio.xml.flat",
+        "source": "com.ardrawing.ardrawing.app-main-87:/drawable/ic_golden_ratio.xml"
+    },
+    {
+        "merged": "com.ardrawing.ardrawing.app-debug-85:/menu_bottom_nav_menu.xml.flat",
+        "source": "com.ardrawing.ardrawing.app-main-87:/menu/bottom_nav_menu.xml"
+    },
+    {
+        "merged": "com.ardrawing.ardrawing.app-debug-85:/menu_main_toolbar.xml.flat",
+        "source": "com.ardrawing.ardrawing.app-main-87:/menu/main_toolbar.xml"
+    },
+    {
+        "merged": "com.ardrawing.ardrawing.app-debug-85:/drawable_ic_close.xml.flat",
+        "source": "com.ardrawing.ardrawing.app-main-87:/drawable/ic_close.xml"
+    },
+    {
+        "merged": "com.ardrawing.ardrawing.app-debug-85:/drawable_ic_play_arrow.xml.flat",
+        "source": "com.ardrawing.ardrawing.app-main-87:/drawable/ic_play_arrow.xml"
+    },
+    {
+        "merged": "com.ardrawing.ardrawing.app-debug-85:/layout_dialog_settings_simple.xml.flat",
+        "source": "com.ardrawing.ardrawing.app-main-87:/layout/dialog_settings_simple.xml"
+    },
+    {
+        "merged": "com.ardrawing.ardrawing.app-debug-85:/drawable_ic_symmetry.xml.flat",
+        "source": "com.ardrawing.ardrawing.app-main-87:/drawable/ic_symmetry.xml"
+    },
+    {
+        "merged": "com.ardrawing.ardrawing.app-debug-85:/mipmap-xxhdpi_ic_launcher.xml.flat",
+        "source": "com.ardrawing.ardrawing.app-main-87:/mipmap-xxhdpi/ic_launcher.xml"
+    },
+    {
+        "merged": "com.ardrawing.ardrawing.app-debug-85:/drawable_ic_fill.xml.flat",
+        "source": "com.ardrawing.ardrawing.app-main-87:/drawable/ic_fill.xml"
+    },
+    {
+        "merged": "com.ardrawing.ardrawing.app-debug-85:/drawable_ic_add.xml.flat",
+        "source": "com.ardrawing.ardrawing.app-main-87:/drawable/ic_add.xml"
+    },
+    {
+        "merged": "com.ardrawing.ardrawing.app-debug-85:/layout_activity_lesson.xml.flat",
+        "source": "com.ardrawing.ardrawing.app-main-87:/layout/activity_lesson.xml"
+    },
+    {
+        "merged": "com.ardrawing.ardrawing.app-debug-85:/drawable_guide_item_selected.xml.flat",
+        "source": "com.ardrawing.ardrawing.app-main-87:/drawable/guide_item_selected.xml"
+    },
+    {
+        "merged": "com.ardrawing.ardrawing.app-debug-85:/layout_layout_lesson_selector.xml.flat",
+        "source": "com.ardrawing.ardrawing.app-main-87:/layout/layout_lesson_selector.xml"
+    },
+    {
+        "merged": "com.ardrawing.ardrawing.app-debug-85:/drawable_ic_brush.xml.flat",
+        "source": "com.ardrawing.ardrawing.app-main-87:/drawable/ic_brush.xml"
+    },
+    {
+        "merged": "com.ardrawing.ardrawing.app-debug-85:/drawable_ic_gallery.xml.flat",
+        "source": "com.ardrawing.ardrawing.app-main-87:/drawable/ic_gallery.xml"
+    },
+    {
+        "merged": "com.ardrawing.ardrawing.app-debug-85:/drawable_ic_shape.xml.flat",
+        "source": "com.ardrawing.ardrawing.app-main-87:/drawable/ic_shape.xml"
+    },
+    {
+        "merged": "com.ardrawing.ardrawing.app-debug-85:/mipmap-xxxhdpi_ic_launcher_round.xml.flat",
+        "source": "com.ardrawing.ardrawing.app-main-87:/mipmap-xxxhdpi/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.ardrawing.ardrawing.app-debug-85:/drawable_ic_help.xml.flat",
+        "source": "com.ardrawing.ardrawing.app-main-87:/drawable/ic_help.xml"
+    },
+    {
+        "merged": "com.ardrawing.ardrawing.app-debug-85:/color_chip_bg_selector.xml.flat",
+        "source": "com.ardrawing.ardrawing.app-main-87:/color/chip_bg_selector.xml"
+    },
+    {
+        "merged": "com.ardrawing.ardrawing.app-debug-85:/layout_dialog_save_drawing.xml.flat",
+        "source": "com.ardrawing.ardrawing.app-main-87:/layout/dialog_save_drawing.xml"
+    },
+    {
+        "merged": "com.ardrawing.ardrawing.app-debug-85:/layout_item_guide.xml.flat",
+        "source": "com.ardrawing.ardrawing.app-main-87:/layout/item_guide.xml"
+    },
+    {
+        "merged": "com.ardrawing.ardrawing.app-debug-85:/drawable_ic_edit.xml.flat",
+        "source": "com.ardrawing.ardrawing.app-main-87:/drawable/ic_edit.xml"
+    },
+    {
+        "merged": "com.ardrawing.ardrawing.app-debug-85:/color_chip_text_selector.xml.flat",
+        "source": "com.ardrawing.ardrawing.app-main-87:/color/chip_text_selector.xml"
+    },
+    {
+        "merged": "com.ardrawing.ardrawing.app-debug-85:/layout_item_lesson.xml.flat",
+        "source": "com.ardrawing.ardrawing.app-main-87:/layout/item_lesson.xml"
+    },
+    {
+        "merged": "com.ardrawing.ardrawing.app-debug-85:/layout_layout_brush_size.xml.flat",
+        "source": "com.ardrawing.ardrawing.app-main-87:/layout/layout_brush_size.xml"
+    },
+    {
+        "merged": "com.ardrawing.ardrawing.app-debug-85:/drawable_ic_isometric.xml.flat",
+        "source": "com.ardrawing.ardrawing.app-main-87:/drawable/ic_isometric.xml"
+    },
+    {
+        "merged": "com.ardrawing.ardrawing.app-debug-85:/drawable_ic_eyedropper.xml.flat",
+        "source": "com.ardrawing.ardrawing.app-main-87:/drawable/ic_eyedropper.xml"
+    },
+    {
+        "merged": "com.ardrawing.ardrawing.app-debug-85:/layout_activity_drawing_gallery.xml.flat",
+        "source": "com.ardrawing.ardrawing.app-main-87:/layout/activity_drawing_gallery.xml"
+    },
+    {
+        "merged": "com.ardrawing.ardrawing.app-debug-85:/drawable_ic_chevron_left.xml.flat",
+        "source": "com.ardrawing.ardrawing.app-main-87:/drawable/ic_chevron_left.xml"
+    },
+    {
+        "merged": "com.ardrawing.ardrawing.app-debug-85:/mipmap-hdpi_ic_launcher_round.xml.flat",
+        "source": "com.ardrawing.ardrawing.app-main-87:/mipmap-hdpi/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.ardrawing.ardrawing.app-debug-85:/drawable_ic_help_circle.xml.flat",
+        "source": "com.ardrawing.ardrawing.app-main-87:/drawable/ic_help_circle.xml"
+    },
+    {
+        "merged": "com.ardrawing.ardrawing.app-debug-85:/layout_layout_color_picker.xml.flat",
+        "source": "com.ardrawing.ardrawing.app-main-87:/layout/layout_color_picker.xml"
+    },
+    {
+        "merged": "com.ardrawing.ardrawing.app-debug-85:/drawable_ic_circle.xml.flat",
+        "source": "com.ardrawing.ardrawing.app-main-87:/drawable/ic_circle.xml"
+    },
+    {
+        "merged": "com.ardrawing.ardrawing.app-debug-85:/mipmap-xhdpi_ic_launcher_round.xml.flat",
+        "source": "com.ardrawing.ardrawing.app-main-87:/mipmap-xhdpi/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.ardrawing.ardrawing.app-debug-85:/drawable_ic_share.xml.flat",
+        "source": "com.ardrawing.ardrawing.app-main-87:/drawable/ic_share.xml"
+    },
+    {
+        "merged": "com.ardrawing.ardrawing.app-debug-85:/drawable_ic_grid_on.xml.flat",
+        "source": "com.ardrawing.ardrawing.app-main-87:/drawable/ic_grid_on.xml"
+    },
+    {
+        "merged": "com.ardrawing.ardrawing.app-debug-85:/drawable_ic_color_lens.xml.flat",
+        "source": "com.ardrawing.ardrawing.app-main-87:/drawable/ic_color_lens.xml"
+    },
+    {
+        "merged": "com.ardrawing.ardrawing.app-debug-85:/xml_file_paths.xml.flat",
+        "source": "com.ardrawing.ardrawing.app-main-87:/xml/file_paths.xml"
+    },
+    {
+        "merged": "com.ardrawing.ardrawing.app-debug-85:/color_bottom_nav_selector.xml.flat",
+        "source": "com.ardrawing.ardrawing.app-main-87:/color/bottom_nav_selector.xml"
+    },
+    {
+        "merged": "com.ardrawing.ardrawing.app-debug-85:/layout_item_lesson_step.xml.flat",
+        "source": "com.ardrawing.ardrawing.app-main-87:/layout/item_lesson_step.xml"
+    },
+    {
+        "merged": "com.ardrawing.ardrawing.app-debug-85:/drawable_ic_perspective.xml.flat",
+        "source": "com.ardrawing.ardrawing.app-main-87:/drawable/ic_perspective.xml"
+    },
+    {
+        "merged": "com.ardrawing.ardrawing.app-debug-85:/drawable_ic_check_circle.xml.flat",
+        "source": "com.ardrawing.ardrawing.app-main-87:/drawable/ic_check_circle.xml"
+    },
+    {
+        "merged": "com.ardrawing.ardrawing.app-debug-85:/layout_item_color_swatch.xml.flat",
+        "source": "com.ardrawing.ardrawing.app-main-87:/layout/item_color_swatch.xml"
+    },
+    {
+        "merged": "com.ardrawing.ardrawing.app-debug-85:/mipmap-mdpi_ic_launcher.xml.flat",
+        "source": "com.ardrawing.ardrawing.app-main-87:/mipmap-mdpi/ic_launcher.xml"
+    },
+    {
+        "merged": "com.ardrawing.ardrawing.app-debug-85:/drawable_ic_perspective_grid.xml.flat",
+        "source": "com.ardrawing.ardrawing.app-main-87:/drawable/ic_perspective_grid.xml"
+    },
+    {
+        "merged": "com.ardrawing.ardrawing.app-debug-85:/menu_viewer_menu.xml.flat",
+        "source": "com.ardrawing.ardrawing.app-main-87:/menu/viewer_menu.xml"
+    },
+    {
+        "merged": "com.ardrawing.ardrawing.app-debug-85:/mipmap-mdpi_ic_launcher_round.xml.flat",
+        "source": "com.ardrawing.ardrawing.app-main-87:/mipmap-mdpi/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.ardrawing.ardrawing.app-debug-85:/drawable_ic_lock.xml.flat",
+        "source": "com.ardrawing.ardrawing.app-main-87:/drawable/ic_lock.xml"
+    },
+    {
+        "merged": "com.ardrawing.ardrawing.app-debug-85:/mipmap-xhdpi_ic_launcher.xml.flat",
+        "source": "com.ardrawing.ardrawing.app-main-87:/mipmap-xhdpi/ic_launcher.xml"
+    },
+    {
+        "merged": "com.ardrawing.ardrawing.app-debug-85:/layout_activity_main.xml.flat",
+        "source": "com.ardrawing.ardrawing.app-main-87:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.ardrawing.ardrawing.app-debug-85:/drawable_guide_item_default.xml.flat",
+        "source": "com.ardrawing.ardrawing.app-main-87:/drawable/guide_item_default.xml"
+    },
+    {
+        "merged": "com.ardrawing.ardrawing.app-debug-85:/drawable_ic_chevron_right.xml.flat",
+        "source": "com.ardrawing.ardrawing.app-main-87:/drawable/ic_chevron_right.xml"
+    },
+    {
+        "merged": "com.ardrawing.ardrawing.app-debug-85:/drawable_ic_star.xml.flat",
+        "source": "com.ardrawing.ardrawing.app-main-87:/drawable/ic_star.xml"
+    },
+    {
+        "merged": "com.ardrawing.ardrawing.app-debug-85:/drawable_ic_settings.xml.flat",
+        "source": "com.ardrawing.ardrawing.app-main-87:/drawable/ic_settings.xml"
+    },
+    {
+        "merged": "com.ardrawing.ardrawing.app-debug-85:/layout_activity_lesson_step.xml.flat",
+        "source": "com.ardrawing.ardrawing.app-main-87:/layout/activity_lesson_step.xml"
+    },
+    {
+        "merged": "com.ardrawing.ardrawing.app-debug-85:/drawable_ic_radio_button_unchecked.xml.flat",
+        "source": "com.ardrawing.ardrawing.app-main-87:/drawable/ic_radio_button_unchecked.xml"
+    },
+    {
+        "merged": "com.ardrawing.ardrawing.app-debug-85:/drawable_ic_redo.xml.flat",
+        "source": "com.ardrawing.ardrawing.app-main-87:/drawable/ic_redo.xml"
+    },
+    {
+        "merged": "com.ardrawing.ardrawing.app-debug-85:/mipmap-xxhdpi_ic_launcher_round.xml.flat",
+        "source": "com.ardrawing.ardrawing.app-main-87:/mipmap-xxhdpi/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.ardrawing.ardrawing.app-debug-85:/xml_data_extraction_rules.xml.flat",
+        "source": "com.ardrawing.ardrawing.app-main-87:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.ardrawing.ardrawing.app-debug-85:/drawable_ic_text.xml.flat",
+        "source": "com.ardrawing.ardrawing.app-main-87:/drawable/ic_text.xml"
+    }
+]

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                        
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="@dimen/lesson_card_width"
+        android:layout_height="@dimen/lesson_card_height"
+        android:layout_margin="@dimen/item_spacing"
+        app:cardCornerRadius="@dimen/lesson_card_radius"
+        app:cardElevation="@dimen/lesson_card_elevation"
+        app:strokeColor="@color/outlineVariant"
+        app:strokeWidth="1dp" android:tag="layout/item_drawing_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/item_spacing">
+
+            <ImageView
+                android:id="@+id/thumbnail"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/lesson_card_image_height"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_star"
+                android:contentDescription="@string/drawing_thumbnail" />
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Drawing Name"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/onSurface"
+                android:layout_marginTop="@dimen/item_spacing"
+                android:maxLines="1"
+                android:ellipsize="end" />
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:textSize="12sp"
+                android:textColor="@color/onSurfaceVariant" />
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+         

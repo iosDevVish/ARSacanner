@@ -1,0 +1,482 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.ardrawing.ardrawing"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+9        android:targetSdkVersion="35" />
+10
+11    <uses-permission android:name="android.permission.CAMERA" />
+11-->/Users/vishal/Documents/ARDrawing/app/src/main/AndroidManifest.xml:6:5-65
+11-->/Users/vishal/Documents/ARDrawing/app/src/main/AndroidManifest.xml:6:22-62
+12    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+12-->/Users/vishal/Documents/ARDrawing/app/src/main/AndroidManifest.xml:7:5-81
+12-->/Users/vishal/Documents/ARDrawing/app/src/main/AndroidManifest.xml:7:22-78
+13    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+13-->/Users/vishal/Documents/ARDrawing/app/src/main/AndroidManifest.xml:8:5-80
+13-->/Users/vishal/Documents/ARDrawing/app/src/main/AndroidManifest.xml:8:22-77
+14    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+14-->/Users/vishal/Documents/ARDrawing/app/src/main/AndroidManifest.xml:9:5-76
+14-->/Users/vishal/Documents/ARDrawing/app/src/main/AndroidManifest.xml:9:22-73
+15    <uses-permission android:name="android.permission.INTERNET" />
+15-->/Users/vishal/Documents/ARDrawing/app/src/main/AndroidManifest.xml:10:5-67
+15-->/Users/vishal/Documents/ARDrawing/app/src/main/AndroidManifest.xml:10:22-64
+16    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+16-->/Users/vishal/Documents/ARDrawing/app/src/main/AndroidManifest.xml:11:5-79
+16-->/Users/vishal/Documents/ARDrawing/app/src/main/AndroidManifest.xml:11:22-76
+17    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+17-->/Users/vishal/Documents/ARDrawing/app/src/main/AndroidManifest.xml:12:5-81
+17-->/Users/vishal/Documents/ARDrawing/app/src/main/AndroidManifest.xml:12:22-78
+18
+19    <uses-feature
+19-->/Users/vishal/Documents/ARDrawing/app/src/main/AndroidManifest.xml:14:5-87
+20        android:name="android.hardware.camera.ar"
+20-->/Users/vishal/Documents/ARDrawing/app/src/main/AndroidManifest.xml:14:19-60
+21        android:required="true" />
+21-->/Users/vishal/Documents/ARDrawing/app/src/main/AndroidManifest.xml:14:61-84
+22    <uses-feature
+22-->/Users/vishal/Documents/ARDrawing/app/src/main/AndroidManifest.xml:15:5-94
+23        android:name="android.hardware.camera.autofocus"
+23-->/Users/vishal/Documents/ARDrawing/app/src/main/AndroidManifest.xml:15:19-67
+24        android:required="true" />
+24-->/Users/vishal/Documents/ARDrawing/app/src/main/AndroidManifest.xml:15:68-91
+25    <uses-feature
+25-->/Users/vishal/Documents/ARDrawing/app/src/main/AndroidManifest.xml:16:5-78
+26        android:glEsVersion="0x00030000"
+26-->/Users/vishal/Documents/ARDrawing/app/src/main/AndroidManifest.xml:16:19-51
+27        android:required="true" />
+27-->/Users/vishal/Documents/ARDrawing/app/src/main/AndroidManifest.xml:16:52-75
+28
+29    <uses-permission android:name="android.permission.WAKE_LOCK" />
+29-->[androidx.work:work-runtime:2.3.4] /Users/vishal/.gradle/caches/8.14.5/transforms/c04dc4b1980d6e75dd809d07602801d6/transformed/work-runtime-2.3.4/AndroidManifest.xml:25:5-68
+29-->[androidx.work:work-runtime:2.3.4] /Users/vishal/.gradle/caches/8.14.5/transforms/c04dc4b1980d6e75dd809d07602801d6/transformed/work-runtime-2.3.4/AndroidManifest.xml:25:22-65
+30    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+30-->[androidx.work:work-runtime:2.3.4] /Users/vishal/.gradle/caches/8.14.5/transforms/c04dc4b1980d6e75dd809d07602801d6/transformed/work-runtime-2.3.4/AndroidManifest.xml:26:5-79
+30-->[androidx.work:work-runtime:2.3.4] /Users/vishal/.gradle/caches/8.14.5/transforms/c04dc4b1980d6e75dd809d07602801d6/transformed/work-runtime-2.3.4/AndroidManifest.xml:26:22-76
+31    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+31-->[androidx.work:work-runtime:2.3.4] /Users/vishal/.gradle/caches/8.14.5/transforms/c04dc4b1980d6e75dd809d07602801d6/transformed/work-runtime-2.3.4/AndroidManifest.xml:27:5-81
+31-->[androidx.work:work-runtime:2.3.4] /Users/vishal/.gradle/caches/8.14.5/transforms/c04dc4b1980d6e75dd809d07602801d6/transformed/work-runtime-2.3.4/AndroidManifest.xml:27:22-78
+32    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+32-->[androidx.work:work-runtime:2.3.4] /Users/vishal/.gradle/caches/8.14.5/transforms/c04dc4b1980d6e75dd809d07602801d6/transformed/work-runtime-2.3.4/AndroidManifest.xml:28:5-77
+32-->[androidx.work:work-runtime:2.3.4] /Users/vishal/.gradle/caches/8.14.5/transforms/c04dc4b1980d6e75dd809d07602801d6/transformed/work-runtime-2.3.4/AndroidManifest.xml:28:22-74
+33
+34    <permission
+34-->[androidx.core:core:1.12.0] /Users/vishal/.gradle/caches/8.14.5/transforms/b1f952d67a2ff291c10ad61cbe67d1a9/transformed/core-1.12.0/AndroidManifest.xml:22:5-24:47
+35        android:name="com.ardrawing.ardrawing.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+35-->[androidx.core:core:1.12.0] /Users/vishal/.gradle/caches/8.14.5/transforms/b1f952d67a2ff291c10ad61cbe67d1a9/transformed/core-1.12.0/AndroidManifest.xml:23:9-81
+36        android:protectionLevel="signature" />
+36-->[androidx.core:core:1.12.0] /Users/vishal/.gradle/caches/8.14.5/transforms/b1f952d67a2ff291c10ad61cbe67d1a9/transformed/core-1.12.0/AndroidManifest.xml:24:9-44
+37
+38    <uses-permission android:name="com.ardrawing.ardrawing.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+38-->[androidx.core:core:1.12.0] /Users/vishal/.gradle/caches/8.14.5/transforms/b1f952d67a2ff291c10ad61cbe67d1a9/transformed/core-1.12.0/AndroidManifest.xml:26:5-97
+38-->[androidx.core:core:1.12.0] /Users/vishal/.gradle/caches/8.14.5/transforms/b1f952d67a2ff291c10ad61cbe67d1a9/transformed/core-1.12.0/AndroidManifest.xml:26:22-94
+39
+40    <queries>
+40-->[com.google.ar:core:1.41.0] /Users/vishal/.gradle/caches/8.14.5/transforms/c942010a4b8a91c67d6056844b1efddd/transformed/jetified-core-1.41.0/AndroidManifest.xml:20:5-27:15
+41        <package android:name="com.google.ar.core" />
+41-->[com.google.ar:core:1.41.0] /Users/vishal/.gradle/caches/8.14.5/transforms/c942010a4b8a91c67d6056844b1efddd/transformed/jetified-core-1.41.0/AndroidManifest.xml:21:9-54
+41-->[com.google.ar:core:1.41.0] /Users/vishal/.gradle/caches/8.14.5/transforms/c942010a4b8a91c67d6056844b1efddd/transformed/jetified-core-1.41.0/AndroidManifest.xml:21:18-51
+42        <package android:name="com.android.vending" />
+42-->[com.google.ar:core:1.41.0] /Users/vishal/.gradle/caches/8.14.5/transforms/c942010a4b8a91c67d6056844b1efddd/transformed/jetified-core-1.41.0/AndroidManifest.xml:22:9-55
+42-->[com.google.ar:core:1.41.0] /Users/vishal/.gradle/caches/8.14.5/transforms/c942010a4b8a91c67d6056844b1efddd/transformed/jetified-core-1.41.0/AndroidManifest.xml:22:18-52
+43
+44        <intent>
+44-->[com.google.ar:core:1.41.0] /Users/vishal/.gradle/caches/8.14.5/transforms/c942010a4b8a91c67d6056844b1efddd/transformed/jetified-core-1.41.0/AndroidManifest.xml:24:9-26:18
+45            <action android:name="com.google.android.play.core.install.BIND_INSTALL_SERVICE" />
+45-->[com.google.ar:core:1.41.0] /Users/vishal/.gradle/caches/8.14.5/transforms/c942010a4b8a91c67d6056844b1efddd/transformed/jetified-core-1.41.0/AndroidManifest.xml:25:13-96
+45-->[com.google.ar:core:1.41.0] /Users/vishal/.gradle/caches/8.14.5/transforms/c942010a4b8a91c67d6056844b1efddd/transformed/jetified-core-1.41.0/AndroidManifest.xml:25:21-93
+46        </intent>
+47    </queries>
+48
+49    <application
+49-->/Users/vishal/Documents/ARDrawing/app/src/main/AndroidManifest.xml:18:5-67:19
+50        android:name="com.ardrawing.ardrawing.ARDrawingApplication"
+50-->/Users/vishal/Documents/ARDrawing/app/src/main/AndroidManifest.xml:19:9-45
+51        android:allowBackup="true"
+51-->/Users/vishal/Documents/ARDrawing/app/src/main/AndroidManifest.xml:20:9-35
+52        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+52-->[androidx.core:core:1.12.0] /Users/vishal/.gradle/caches/8.14.5/transforms/b1f952d67a2ff291c10ad61cbe67d1a9/transformed/core-1.12.0/AndroidManifest.xml:28:18-86
+53        android:dataExtractionRules="@xml/data_extraction_rules"
+53-->/Users/vishal/Documents/ARDrawing/app/src/main/AndroidManifest.xml:21:9-65
+54        android:debuggable="true"
+55        android:extractNativeLibs="false"
+55-->/Users/vishal/Documents/ARDrawing/app/src/main/AndroidManifest.xml:22:9-42
+56        android:fullBackupContent="@xml/backup_rules"
+56-->/Users/vishal/Documents/ARDrawing/app/src/main/AndroidManifest.xml:23:9-54
+57        android:icon="@mipmap/ic_launcher"
+57-->/Users/vishal/Documents/ARDrawing/app/src/main/AndroidManifest.xml:24:9-43
+58        android:label="@string/app_name"
+58-->/Users/vishal/Documents/ARDrawing/app/src/main/AndroidManifest.xml:25:9-41
+59        android:roundIcon="@mipmap/ic_launcher_round"
+59-->/Users/vishal/Documents/ARDrawing/app/src/main/AndroidManifest.xml:26:9-54
+60        android:supportsRtl="true"
+60-->/Users/vishal/Documents/ARDrawing/app/src/main/AndroidManifest.xml:27:9-35
+61        android:testOnly="true"
+62        android:theme="@style/Theme.ARDrawing" >
+62-->/Users/vishal/Documents/ARDrawing/app/src/main/AndroidManifest.xml:28:9-47
+63        <meta-data
+63-->/Users/vishal/Documents/ARDrawing/app/src/main/AndroidManifest.xml:31:9-33:40
+64            android:name="com.google.ar.core"
+64-->/Users/vishal/Documents/ARDrawing/app/src/main/AndroidManifest.xml:32:13-46
+65            android:value="required" />
+65-->/Users/vishal/Documents/ARDrawing/app/src/main/AndroidManifest.xml:33:13-37
+66
+67        <provider
+68            android:name="androidx.core.content.FileProvider"
+68-->/Users/vishal/Documents/ARDrawing/app/src/main/AndroidManifest.xml:36:13-62
+69            android:authorities="com.ardrawing.ardrawing.fileprovider"
+69-->/Users/vishal/Documents/ARDrawing/app/src/main/AndroidManifest.xml:37:13-64
+70            android:exported="false"
+70-->/Users/vishal/Documents/ARDrawing/app/src/main/AndroidManifest.xml:38:13-37
+71            android:grantUriPermissions="true" >
+71-->/Users/vishal/Documents/ARDrawing/app/src/main/AndroidManifest.xml:39:13-47
+72            <meta-data
+72-->/Users/vishal/Documents/ARDrawing/app/src/main/AndroidManifest.xml:40:13-42:54
+73                android:name="android.support.FILE_PROVIDER_PATHS"
+73-->/Users/vishal/Documents/ARDrawing/app/src/main/AndroidManifest.xml:41:17-67
+74                android:resource="@xml/file_paths" />
+74-->/Users/vishal/Documents/ARDrawing/app/src/main/AndroidManifest.xml:42:17-51
+75        </provider>
+76
+77        <activity
+77-->/Users/vishal/Documents/ARDrawing/app/src/main/AndroidManifest.xml:45:9-55:20
+78            android:name="com.ardrawing.ardrawing.MainActivity"
+78-->/Users/vishal/Documents/ARDrawing/app/src/main/AndroidManifest.xml:46:13-41
+79            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+79-->/Users/vishal/Documents/ARDrawing/app/src/main/AndroidManifest.xml:49:13-87
+80            android:exported="true"
+80-->/Users/vishal/Documents/ARDrawing/app/src/main/AndroidManifest.xml:47:13-36
+81            android:screenOrientation="portrait"
+81-->/Users/vishal/Documents/ARDrawing/app/src/main/AndroidManifest.xml:48:13-49
+82            android:theme="@style/Theme.ARDrawing.Fullscreen" >
+82-->/Users/vishal/Documents/ARDrawing/app/src/main/AndroidManifest.xml:50:13-62
+83            <intent-filter>
+83-->/Users/vishal/Documents/ARDrawing/app/src/main/AndroidManifest.xml:51:13-54:29
+84                <action android:name="android.intent.action.MAIN" />
+84-->/Users/vishal/Documents/ARDrawing/app/src/main/AndroidManifest.xml:52:17-69
+84-->/Users/vishal/Documents/ARDrawing/app/src/main/AndroidManifest.xml:52:25-66
+85
+86                <category android:name="android.intent.category.LAUNCHER" />
+86-->/Users/vishal/Documents/ARDrawing/app/src/main/AndroidManifest.xml:53:17-77
+86-->/Users/vishal/Documents/ARDrawing/app/src/main/AndroidManifest.xml:53:27-74
+87            </intent-filter>
+88        </activity>
+89        <activity
+89-->/Users/vishal/Documents/ARDrawing/app/src/main/AndroidManifest.xml:57:9-60:52
+90            android:name="com.ardrawing.ardrawing.lesson.LessonActivity"
+90-->/Users/vishal/Documents/ARDrawing/app/src/main/AndroidManifest.xml:58:13-50
+91            android:exported="false"
+91-->/Users/vishal/Documents/ARDrawing/app/src/main/AndroidManifest.xml:59:13-37
+92            android:screenOrientation="portrait" />
+92-->/Users/vishal/Documents/ARDrawing/app/src/main/AndroidManifest.xml:60:13-49
+93        <activity
+93-->/Users/vishal/Documents/ARDrawing/app/src/main/AndroidManifest.xml:62:9-65:52
+94            android:name="com.ardrawing.ardrawing.drawing.DrawingGalleryActivity"
+94-->/Users/vishal/Documents/ARDrawing/app/src/main/AndroidManifest.xml:63:13-59
+95            android:exported="false"
+95-->/Users/vishal/Documents/ARDrawing/app/src/main/AndroidManifest.xml:64:13-37
+96            android:screenOrientation="portrait" />
+96-->/Users/vishal/Documents/ARDrawing/app/src/main/AndroidManifest.xml:65:13-49
+97
+98        <service
+98-->[androidx.camera:camera-camera2:1.3.1] /Users/vishal/.gradle/caches/8.14.5/transforms/46ef134f846cc6ef8850522a88df3e18/transformed/jetified-camera-camera2-1.3.1/AndroidManifest.xml:24:9-33:19
+99            android:name="androidx.camera.core.impl.MetadataHolderService"
+99-->[androidx.camera:camera-camera2:1.3.1] /Users/vishal/.gradle/caches/8.14.5/transforms/46ef134f846cc6ef8850522a88df3e18/transformed/jetified-camera-camera2-1.3.1/AndroidManifest.xml:25:13-75
+100            android:enabled="false"
+100-->[androidx.camera:camera-camera2:1.3.1] /Users/vishal/.gradle/caches/8.14.5/transforms/46ef134f846cc6ef8850522a88df3e18/transformed/jetified-camera-camera2-1.3.1/AndroidManifest.xml:26:13-36
+101            android:exported="false" >
+101-->[androidx.camera:camera-camera2:1.3.1] /Users/vishal/.gradle/caches/8.14.5/transforms/46ef134f846cc6ef8850522a88df3e18/transformed/jetified-camera-camera2-1.3.1/AndroidManifest.xml:27:13-37
+102            <meta-data
+102-->[androidx.camera:camera-camera2:1.3.1] /Users/vishal/.gradle/caches/8.14.5/transforms/46ef134f846cc6ef8850522a88df3e18/transformed/jetified-camera-camera2-1.3.1/AndroidManifest.xml:30:13-32:89
+103                android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER"
+103-->[androidx.camera:camera-camera2:1.3.1] /Users/vishal/.gradle/caches/8.14.5/transforms/46ef134f846cc6ef8850522a88df3e18/transformed/jetified-camera-camera2-1.3.1/AndroidManifest.xml:31:17-103
+104                android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
+104-->[androidx.camera:camera-camera2:1.3.1] /Users/vishal/.gradle/caches/8.14.5/transforms/46ef134f846cc6ef8850522a88df3e18/transformed/jetified-camera-camera2-1.3.1/AndroidManifest.xml:32:17-86
+105        </service>
+106
+107        <provider
+107-->[androidx.work:work-runtime:2.3.4] /Users/vishal/.gradle/caches/8.14.5/transforms/c04dc4b1980d6e75dd809d07602801d6/transformed/work-runtime-2.3.4/AndroidManifest.xml:31:9-37:35
+108            android:name="androidx.work.impl.WorkManagerInitializer"
+108-->[androidx.work:work-runtime:2.3.4] /Users/vishal/.gradle/caches/8.14.5/transforms/c04dc4b1980d6e75dd809d07602801d6/transformed/work-runtime-2.3.4/AndroidManifest.xml:32:13-69
+109            android:authorities="com.ardrawing.ardrawing.workmanager-init"
+109-->[androidx.work:work-runtime:2.3.4] /Users/vishal/.gradle/caches/8.14.5/transforms/c04dc4b1980d6e75dd809d07602801d6/transformed/work-runtime-2.3.4/AndroidManifest.xml:33:13-68
+110            android:directBootAware="false"
+110-->[androidx.work:work-runtime:2.3.4] /Users/vishal/.gradle/caches/8.14.5/transforms/c04dc4b1980d6e75dd809d07602801d6/transformed/work-runtime-2.3.4/AndroidManifest.xml:34:13-44
+111            android:exported="false"
+111-->[androidx.work:work-runtime:2.3.4] /Users/vishal/.gradle/caches/8.14.5/transforms/c04dc4b1980d6e75dd809d07602801d6/transformed/work-runtime-2.3.4/AndroidManifest.xml:35:13-37
+112            android:multiprocess="true" />
+112-->[androidx.work:work-runtime:2.3.4] /Users/vishal/.gradle/caches/8.14.5/transforms/c04dc4b1980d6e75dd809d07602801d6/transformed/work-runtime-2.3.4/AndroidManifest.xml:36:13-40
+113
+114        <service
+114-->[androidx.work:work-runtime:2.3.4] /Users/vishal/.gradle/caches/8.14.5/transforms/c04dc4b1980d6e75dd809d07602801d6/transformed/work-runtime-2.3.4/AndroidManifest.xml:39:9-44:35
+115            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+115-->[androidx.work:work-runtime:2.3.4] /Users/vishal/.gradle/caches/8.14.5/transforms/c04dc4b1980d6e75dd809d07602801d6/transformed/work-runtime-2.3.4/AndroidManifest.xml:40:13-88
+116            android:directBootAware="false"
+116-->[androidx.work:work-runtime:2.3.4] /Users/vishal/.gradle/caches/8.14.5/transforms/c04dc4b1980d6e75dd809d07602801d6/transformed/work-runtime-2.3.4/AndroidManifest.xml:41:13-44
+117            android:enabled="@bool/enable_system_alarm_service_default"
+117-->[androidx.work:work-runtime:2.3.4] /Users/vishal/.gradle/caches/8.14.5/transforms/c04dc4b1980d6e75dd809d07602801d6/transformed/work-runtime-2.3.4/AndroidManifest.xml:42:13-72
+118            android:exported="false" />
+118-->[androidx.work:work-runtime:2.3.4] /Users/vishal/.gradle/caches/8.14.5/transforms/c04dc4b1980d6e75dd809d07602801d6/transformed/work-runtime-2.3.4/AndroidManifest.xml:43:13-37
+119        <service
+119-->[androidx.work:work-runtime:2.3.4] /Users/vishal/.gradle/caches/8.14.5/transforms/c04dc4b1980d6e75dd809d07602801d6/transformed/work-runtime-2.3.4/AndroidManifest.xml:45:9-51:35
+120            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+120-->[androidx.work:work-runtime:2.3.4] /Users/vishal/.gradle/caches/8.14.5/transforms/c04dc4b1980d6e75dd809d07602801d6/transformed/work-runtime-2.3.4/AndroidManifest.xml:46:13-84
+121            android:directBootAware="false"
+121-->[androidx.work:work-runtime:2.3.4] /Users/vishal/.gradle/caches/8.14.5/transforms/c04dc4b1980d6e75dd809d07602801d6/transformed/work-runtime-2.3.4/AndroidManifest.xml:47:13-44
+122            android:enabled="@bool/enable_system_job_service_default"
+122-->[androidx.work:work-runtime:2.3.4] /Users/vishal/.gradle/caches/8.14.5/transforms/c04dc4b1980d6e75dd809d07602801d6/transformed/work-runtime-2.3.4/AndroidManifest.xml:48:13-70
+123            android:exported="true"
+123-->[androidx.work:work-runtime:2.3.4] /Users/vishal/.gradle/caches/8.14.5/transforms/c04dc4b1980d6e75dd809d07602801d6/transformed/work-runtime-2.3.4/AndroidManifest.xml:49:13-36
+124            android:permission="android.permission.BIND_JOB_SERVICE" />
+124-->[androidx.work:work-runtime:2.3.4] /Users/vishal/.gradle/caches/8.14.5/transforms/c04dc4b1980d6e75dd809d07602801d6/transformed/work-runtime-2.3.4/AndroidManifest.xml:50:13-69
+125        <service
+125-->[androidx.work:work-runtime:2.3.4] /Users/vishal/.gradle/caches/8.14.5/transforms/c04dc4b1980d6e75dd809d07602801d6/transformed/work-runtime-2.3.4/AndroidManifest.xml:52:9-57:35
+126            android:name="androidx.work.impl.foreground.SystemForegroundService"
+126-->[androidx.work:work-runtime:2.3.4] /Users/vishal/.gradle/caches/8.14.5/transforms/c04dc4b1980d6e75dd809d07602801d6/transformed/work-runtime-2.3.4/AndroidManifest.xml:53:13-81
+127            android:directBootAware="false"
+127-->[androidx.work:work-runtime:2.3.4] /Users/vishal/.gradle/caches/8.14.5/transforms/c04dc4b1980d6e75dd809d07602801d6/transformed/work-runtime-2.3.4/AndroidManifest.xml:54:13-44
+128            android:enabled="@bool/enable_system_foreground_service_default"
+128-->[androidx.work:work-runtime:2.3.4] /Users/vishal/.gradle/caches/8.14.5/transforms/c04dc4b1980d6e75dd809d07602801d6/transformed/work-runtime-2.3.4/AndroidManifest.xml:55:13-77
+129            android:exported="false" />
+129-->[androidx.work:work-runtime:2.3.4] /Users/vishal/.gradle/caches/8.14.5/transforms/c04dc4b1980d6e75dd809d07602801d6/transformed/work-runtime-2.3.4/AndroidManifest.xml:56:13-37
+130
+131        <receiver
+131-->[androidx.work:work-runtime:2.3.4] /Users/vishal/.gradle/caches/8.14.5/transforms/c04dc4b1980d6e75dd809d07602801d6/transformed/work-runtime-2.3.4/AndroidManifest.xml:59:9-64:35
+132            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+132-->[androidx.work:work-runtime:2.3.4] /Users/vishal/.gradle/caches/8.14.5/transforms/c04dc4b1980d6e75dd809d07602801d6/transformed/work-runtime-2.3.4/AndroidManifest.xml:60:13-88
+133            android:directBootAware="false"
+133-->[androidx.work:work-runtime:2.3.4] /Users/vishal/.gradle/caches/8.14.5/transforms/c04dc4b1980d6e75dd809d07602801d6/transformed/work-runtime-2.3.4/AndroidManifest.xml:61:13-44
+134            android:enabled="true"
+134-->[androidx.work:work-runtime:2.3.4] /Users/vishal/.gradle/caches/8.14.5/transforms/c04dc4b1980d6e75dd809d07602801d6/transformed/work-runtime-2.3.4/AndroidManifest.xml:62:13-35
+135            android:exported="false" />
+135-->[androidx.work:work-runtime:2.3.4] /Users/vishal/.gradle/caches/8.14.5/transforms/c04dc4b1980d6e75dd809d07602801d6/transformed/work-runtime-2.3.4/AndroidManifest.xml:63:13-37
+136        <receiver
+136-->[androidx.work:work-runtime:2.3.4] /Users/vishal/.gradle/caches/8.14.5/transforms/c04dc4b1980d6e75dd809d07602801d6/transformed/work-runtime-2.3.4/AndroidManifest.xml:65:9-75:20
+137            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+137-->[androidx.work:work-runtime:2.3.4] /Users/vishal/.gradle/caches/8.14.5/transforms/c04dc4b1980d6e75dd809d07602801d6/transformed/work-runtime-2.3.4/AndroidManifest.xml:66:13-106
+138            android:directBootAware="false"
+138-->[androidx.work:work-runtime:2.3.4] /Users/vishal/.gradle/caches/8.14.5/transforms/c04dc4b1980d6e75dd809d07602801d6/transformed/work-runtime-2.3.4/AndroidManifest.xml:67:13-44
+139            android:enabled="false"
+139-->[androidx.work:work-runtime:2.3.4] /Users/vishal/.gradle/caches/8.14.5/transforms/c04dc4b1980d6e75dd809d07602801d6/transformed/work-runtime-2.3.4/AndroidManifest.xml:68:13-36
+140            android:exported="false" >
+140-->[androidx.work:work-runtime:2.3.4] /Users/vishal/.gradle/caches/8.14.5/transforms/c04dc4b1980d6e75dd809d07602801d6/transformed/work-runtime-2.3.4/AndroidManifest.xml:69:13-37
+141            <intent-filter>
+141-->[androidx.work:work-runtime:2.3.4] /Users/vishal/.gradle/caches/8.14.5/transforms/c04dc4b1980d6e75dd809d07602801d6/transformed/work-runtime-2.3.4/AndroidManifest.xml:71:13-74:29
+142                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+142-->[androidx.work:work-runtime:2.3.4] /Users/vishal/.gradle/caches/8.14.5/transforms/c04dc4b1980d6e75dd809d07602801d6/transformed/work-runtime-2.3.4/AndroidManifest.xml:72:17-87
+142-->[androidx.work:work-runtime:2.3.4] /Users/vishal/.gradle/caches/8.14.5/transforms/c04dc4b1980d6e75dd809d07602801d6/transformed/work-runtime-2.3.4/AndroidManifest.xml:72:25-84
+143                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+143-->[androidx.work:work-runtime:2.3.4] /Users/vishal/.gradle/caches/8.14.5/transforms/c04dc4b1980d6e75dd809d07602801d6/transformed/work-runtime-2.3.4/AndroidManifest.xml:73:17-90
+143-->[androidx.work:work-runtime:2.3.4] /Users/vishal/.gradle/caches/8.14.5/transforms/c04dc4b1980d6e75dd809d07602801d6/transformed/work-runtime-2.3.4/AndroidManifest.xml:73:25-87
+144            </intent-filter>
+145        </receiver>
+146        <receiver
+146-->[androidx.work:work-runtime:2.3.4] /Users/vishal/.gradle/caches/8.14.5/transforms/c04dc4b1980d6e75dd809d07602801d6/transformed/work-runtime-2.3.4/AndroidManifest.xml:76:9-86:20
+147            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+147-->[androidx.work:work-runtime:2.3.4] /Users/vishal/.gradle/caches/8.14.5/transforms/c04dc4b1980d6e75dd809d07602801d6/transformed/work-runtime-2.3.4/AndroidManifest.xml:77:13-104
+148            android:directBootAware="false"
+148-->[androidx.work:work-runtime:2.3.4] /Users/vishal/.gradle/caches/8.14.5/transforms/c04dc4b1980d6e75dd809d07602801d6/transformed/work-runtime-2.3.4/AndroidManifest.xml:78:13-44
+149            android:enabled="false"
+149-->[androidx.work:work-runtime:2.3.4] /Users/vishal/.gradle/caches/8.14.5/transforms/c04dc4b1980d6e75dd809d07602801d6/transformed/work-runtime-2.3.4/AndroidManifest.xml:79:13-36
+150            android:exported="false" >
+150-->[androidx.work:work-runtime:2.3.4] /Users/vishal/.gradle/caches/8.14.5/transforms/c04dc4b1980d6e75dd809d07602801d6/transformed/work-runtime-2.3.4/AndroidManifest.xml:80:13-37
+151            <intent-filter>
+151-->[androidx.work:work-runtime:2.3.4] /Users/vishal/.gradle/caches/8.14.5/transforms/c04dc4b1980d6e75dd809d07602801d6/transformed/work-runtime-2.3.4/AndroidManifest.xml:82:13-85:29
+152                <action android:name="android.intent.action.BATTERY_OKAY" />
+152-->[androidx.work:work-runtime:2.3.4] /Users/vishal/.gradle/caches/8.14.5/transforms/c04dc4b1980d6e75dd809d07602801d6/transformed/work-runtime-2.3.4/AndroidManifest.xml:83:17-77
+152-->[androidx.work:work-runtime:2.3.4] /Users/vishal/.gradle/caches/8.14.5/transforms/c04dc4b1980d6e75dd809d07602801d6/transformed/work-runtime-2.3.4/AndroidManifest.xml:83:25-74
+153                <action android:name="android.intent.action.BATTERY_LOW" />
+153-->[androidx.work:work-runtime:2.3.4] /Users/vishal/.gradle/caches/8.14.5/transforms/c04dc4b1980d6e75dd809d07602801d6/transformed/work-runtime-2.3.4/AndroidManifest.xml:84:17-76
+153-->[androidx.work:work-runtime:2.3.4] /Users/vishal/.gradle/caches/8.14.5/transforms/c04dc4b1980d6e75dd809d07602801d6/transformed/work-runtime-2.3.4/AndroidManifest.xml:84:25-73
+154            </intent-filter>
+155        </receiver>
+156        <receiver
+156-->[androidx.work:work-runtime:2.3.4] /Users/vishal/.gradle/caches/8.14.5/transforms/c04dc4b1980d6e75dd809d07602801d6/transformed/work-runtime-2.3.4/AndroidManifest.xml:87:9-97:20
+157            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+157-->[androidx.work:work-runtime:2.3.4] /Users/vishal/.gradle/caches/8.14.5/transforms/c04dc4b1980d6e75dd809d07602801d6/transformed/work-runtime-2.3.4/AndroidManifest.xml:88:13-104
+158            android:directBootAware="false"
+158-->[androidx.work:work-runtime:2.3.4] /Users/vishal/.gradle/caches/8.14.5/transforms/c04dc4b1980d6e75dd809d07602801d6/transformed/work-runtime-2.3.4/AndroidManifest.xml:89:13-44
+159            android:enabled="false"
+159-->[androidx.work:work-runtime:2.3.4] /Users/vishal/.gradle/caches/8.14.5/transforms/c04dc4b1980d6e75dd809d07602801d6/transformed/work-runtime-2.3.4/AndroidManifest.xml:90:13-36
+160            android:exported="false" >
+160-->[androidx.work:work-runtime:2.3.4] /Users/vishal/.gradle/caches/8.14.5/transforms/c04dc4b1980d6e75dd809d07602801d6/transformed/work-runtime-2.3.4/AndroidManifest.xml:91:13-37
+161            <intent-filter>
+161-->[androidx.work:work-runtime:2.3.4] /Users/vishal/.gradle/caches/8.14.5/transforms/c04dc4b1980d6e75dd809d07602801d6/transformed/work-runtime-2.3.4/AndroidManifest.xml:93:13-96:29
+162                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+162-->[androidx.work:work-runtime:2.3.4] /Users/vishal/.gradle/caches/8.14.5/transforms/c04dc4b1980d6e75dd809d07602801d6/transformed/work-runtime-2.3.4/AndroidManifest.xml:94:17-83
+162-->[androidx.work:work-runtime:2.3.4] /Users/vishal/.gradle/caches/8.14.5/transforms/c04dc4b1980d6e75dd809d07602801d6/transformed/work-runtime-2.3.4/AndroidManifest.xml:94:25-80
+163                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+163-->[androidx.work:work-runtime:2.3.4] /Users/vishal/.gradle/caches/8.14.5/transforms/c04dc4b1980d6e75dd809d07602801d6/transformed/work-runtime-2.3.4/AndroidManifest.xml:95:17-82
+163-->[androidx.work:work-runtime:2.3.4] /Users/vishal/.gradle/caches/8.14.5/transforms/c04dc4b1980d6e75dd809d07602801d6/transformed/work-runtime-2.3.4/AndroidManifest.xml:95:25-79
+164            </intent-filter>
+165        </receiver>
+166        <receiver
+166-->[androidx.work:work-runtime:2.3.4] /Users/vishal/.gradle/caches/8.14.5/transforms/c04dc4b1980d6e75dd809d07602801d6/transformed/work-runtime-2.3.4/AndroidManifest.xml:98:9-107:20
+167            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+167-->[androidx.work:work-runtime:2.3.4] /Users/vishal/.gradle/caches/8.14.5/transforms/c04dc4b1980d6e75dd809d07602801d6/transformed/work-runtime-2.3.4/AndroidManifest.xml:99:13-103
+168            android:directBootAware="false"
+168-->[androidx.work:work-runtime:2.3.4] /Users/vishal/.gradle/caches/8.14.5/transforms/c04dc4b1980d6e75dd809d07602801d6/transformed/work-runtime-2.3.4/AndroidManifest.xml:100:13-44
+169            android:enabled="false"
+169-->[androidx.work:work-runtime:2.3.4] /Users/vishal/.gradle/caches/8.14.5/transforms/c04dc4b1980d6e75dd809d07602801d6/transformed/work-runtime-2.3.4/AndroidManifest.xml:101:13-36
+170            android:exported="false" >
+170-->[androidx.work:work-runtime:2.3.4] /Users/vishal/.gradle/caches/8.14.5/transforms/c04dc4b1980d6e75dd809d07602801d6/transformed/work-runtime-2.3.4/AndroidManifest.xml:102:13-37
+171            <intent-filter>
+171-->[androidx.work:work-runtime:2.3.4] /Users/vishal/.gradle/caches/8.14.5/transforms/c04dc4b1980d6e75dd809d07602801d6/transformed/work-runtime-2.3.4/AndroidManifest.xml:104:13-106:29
+172                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+172-->[androidx.work:work-runtime:2.3.4] /Users/vishal/.gradle/caches/8.14.5/transforms/c04dc4b1980d6e75dd809d07602801d6/transformed/work-runtime-2.3.4/AndroidManifest.xml:105:17-79
+172-->[androidx.work:work-runtime:2.3.4] /Users/vishal/.gradle/caches/8.14.5/transforms/c04dc4b1980d6e75dd809d07602801d6/transformed/work-runtime-2.3.4/AndroidManifest.xml:105:25-76
+173            </intent-filter>
+174        </receiver>
+175        <receiver
+175-->[androidx.work:work-runtime:2.3.4] /Users/vishal/.gradle/caches/8.14.5/transforms/c04dc4b1980d6e75dd809d07602801d6/transformed/work-runtime-2.3.4/AndroidManifest.xml:108:9-119:20
+176            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+176-->[androidx.work:work-runtime:2.3.4] /Users/vishal/.gradle/caches/8.14.5/transforms/c04dc4b1980d6e75dd809d07602801d6/transformed/work-runtime-2.3.4/AndroidManifest.xml:109:13-88
+177            android:directBootAware="false"
+177-->[androidx.work:work-runtime:2.3.4] /Users/vishal/.gradle/caches/8.14.5/transforms/c04dc4b1980d6e75dd809d07602801d6/transformed/work-runtime-2.3.4/AndroidManifest.xml:110:13-44
+178            android:enabled="false"
+178-->[androidx.work:work-runtime:2.3.4] /Users/vishal/.gradle/caches/8.14.5/transforms/c04dc4b1980d6e75dd809d07602801d6/transformed/work-runtime-2.3.4/AndroidManifest.xml:111:13-36
+179            android:exported="false" >
+179-->[androidx.work:work-runtime:2.3.4] /Users/vishal/.gradle/caches/8.14.5/transforms/c04dc4b1980d6e75dd809d07602801d6/transformed/work-runtime-2.3.4/AndroidManifest.xml:112:13-37
+180            <intent-filter>
+180-->[androidx.work:work-runtime:2.3.4] /Users/vishal/.gradle/caches/8.14.5/transforms/c04dc4b1980d6e75dd809d07602801d6/transformed/work-runtime-2.3.4/AndroidManifest.xml:114:13-118:29
+181                <action android:name="android.intent.action.BOOT_COMPLETED" />
+181-->[androidx.work:work-runtime:2.3.4] /Users/vishal/.gradle/caches/8.14.5/transforms/c04dc4b1980d6e75dd809d07602801d6/transformed/work-runtime-2.3.4/AndroidManifest.xml:115:17-79
+181-->[androidx.work:work-runtime:2.3.4] /Users/vishal/.gradle/caches/8.14.5/transforms/c04dc4b1980d6e75dd809d07602801d6/transformed/work-runtime-2.3.4/AndroidManifest.xml:115:25-76
+182                <action android:name="android.intent.action.TIME_SET" />
+182-->[androidx.work:work-runtime:2.3.4] /Users/vishal/.gradle/caches/8.14.5/transforms/c04dc4b1980d6e75dd809d07602801d6/transformed/work-runtime-2.3.4/AndroidManifest.xml:116:17-73
+182-->[androidx.work:work-runtime:2.3.4] /Users/vishal/.gradle/caches/8.14.5/transforms/c04dc4b1980d6e75dd809d07602801d6/transformed/work-runtime-2.3.4/AndroidManifest.xml:116:25-70
+183                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+183-->[androidx.work:work-runtime:2.3.4] /Users/vishal/.gradle/caches/8.14.5/transforms/c04dc4b1980d6e75dd809d07602801d6/transformed/work-runtime-2.3.4/AndroidManifest.xml:117:17-81
+183-->[androidx.work:work-runtime:2.3.4] /Users/vishal/.gradle/caches/8.14.5/transforms/c04dc4b1980d6e75dd809d07602801d6/transformed/work-runtime-2.3.4/AndroidManifest.xml:117:25-78
+184            </intent-filter>
+185        </receiver>
+186        <receiver
+186-->[androidx.work:work-runtime:2.3.4] /Users/vishal/.gradle/caches/8.14.5/transforms/c04dc4b1980d6e75dd809d07602801d6/transformed/work-runtime-2.3.4/AndroidManifest.xml:120:9-129:20
+187            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+187-->[androidx.work:work-runtime:2.3.4] /Users/vishal/.gradle/caches/8.14.5/transforms/c04dc4b1980d6e75dd809d07602801d6/transformed/work-runtime-2.3.4/AndroidManifest.xml:121:13-99
+188            android:directBootAware="false"
+188-->[androidx.work:work-runtime:2.3.4] /Users/vishal/.gradle/caches/8.14.5/transforms/c04dc4b1980d6e75dd809d07602801d6/transformed/work-runtime-2.3.4/AndroidManifest.xml:122:13-44
+189            android:enabled="@bool/enable_system_alarm_service_default"
+189-->[androidx.work:work-runtime:2.3.4] /Users/vishal/.gradle/caches/8.14.5/transforms/c04dc4b1980d6e75dd809d07602801d6/transformed/work-runtime-2.3.4/AndroidManifest.xml:123:13-72
+190            android:exported="false" >
+190-->[androidx.work:work-runtime:2.3.4] /Users/vishal/.gradle/caches/8.14.5/transforms/c04dc4b1980d6e75dd809d07602801d6/transformed/work-runtime-2.3.4/AndroidManifest.xml:124:13-37
+191            <intent-filter>
+191-->[androidx.work:work-runtime:2.3.4] /Users/vishal/.gradle/caches/8.14.5/transforms/c04dc4b1980d6e75dd809d07602801d6/transformed/work-runtime-2.3.4/AndroidManifest.xml:126:13-128:29
+192                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+192-->[androidx.work:work-runtime:2.3.4] /Users/vishal/.gradle/caches/8.14.5/transforms/c04dc4b1980d6e75dd809d07602801d6/transformed/work-runtime-2.3.4/AndroidManifest.xml:127:17-98
+192-->[androidx.work:work-runtime:2.3.4] /Users/vishal/.gradle/caches/8.14.5/transforms/c04dc4b1980d6e75dd809d07602801d6/transformed/work-runtime-2.3.4/AndroidManifest.xml:127:25-95
+193            </intent-filter>
+194        </receiver>
+195
+196        <provider
+196-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/vishal/.gradle/caches/8.14.5/transforms/39ec8cd095589b69dbef9800fcedca23/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:24:9-32:20
+197            android:name="androidx.startup.InitializationProvider"
+197-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/vishal/.gradle/caches/8.14.5/transforms/39ec8cd095589b69dbef9800fcedca23/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:25:13-67
+198            android:authorities="com.ardrawing.ardrawing.androidx-startup"
+198-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/vishal/.gradle/caches/8.14.5/transforms/39ec8cd095589b69dbef9800fcedca23/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:26:13-68
+199            android:exported="false" >
+199-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/vishal/.gradle/caches/8.14.5/transforms/39ec8cd095589b69dbef9800fcedca23/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:27:13-37
+200            <meta-data
+200-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/vishal/.gradle/caches/8.14.5/transforms/39ec8cd095589b69dbef9800fcedca23/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:29:13-31:52
+201                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+201-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/vishal/.gradle/caches/8.14.5/transforms/39ec8cd095589b69dbef9800fcedca23/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:30:17-78
+202                android:value="androidx.startup" />
+202-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/vishal/.gradle/caches/8.14.5/transforms/39ec8cd095589b69dbef9800fcedca23/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:31:17-49
+203            <meta-data
+203-->[androidx.emoji2:emoji2:1.2.0] /Users/vishal/.gradle/caches/8.14.5/transforms/f45e5f28dca311447b25235117e9cde5/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+204                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+204-->[androidx.emoji2:emoji2:1.2.0] /Users/vishal/.gradle/caches/8.14.5/transforms/f45e5f28dca311447b25235117e9cde5/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:30:17-75
+205                android:value="androidx.startup" />
+205-->[androidx.emoji2:emoji2:1.2.0] /Users/vishal/.gradle/caches/8.14.5/transforms/f45e5f28dca311447b25235117e9cde5/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:31:17-49
+206            <meta-data
+206-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/vishal/.gradle/caches/8.14.5/transforms/95a9e9e882c1421adf2b602904923765/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
+207                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+207-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/vishal/.gradle/caches/8.14.5/transforms/95a9e9e882c1421adf2b602904923765/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
+208                android:value="androidx.startup" />
+208-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/vishal/.gradle/caches/8.14.5/transforms/95a9e9e882c1421adf2b602904923765/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
+209        </provider>
+210
+211        <uses-library
+211-->[androidx.window:window:1.0.0] /Users/vishal/.gradle/caches/8.14.5/transforms/e53540216cd034334539edb4dfbc3640/transformed/jetified-window-1.0.0/AndroidManifest.xml:25:9-27:40
+212            android:name="androidx.window.extensions"
+212-->[androidx.window:window:1.0.0] /Users/vishal/.gradle/caches/8.14.5/transforms/e53540216cd034334539edb4dfbc3640/transformed/jetified-window-1.0.0/AndroidManifest.xml:26:13-54
+213            android:required="false" />
+213-->[androidx.window:window:1.0.0] /Users/vishal/.gradle/caches/8.14.5/transforms/e53540216cd034334539edb4dfbc3640/transformed/jetified-window-1.0.0/AndroidManifest.xml:27:13-37
+214        <uses-library
+214-->[androidx.window:window:1.0.0] /Users/vishal/.gradle/caches/8.14.5/transforms/e53540216cd034334539edb4dfbc3640/transformed/jetified-window-1.0.0/AndroidManifest.xml:28:9-30:40
+215            android:name="androidx.window.sidecar"
+215-->[androidx.window:window:1.0.0] /Users/vishal/.gradle/caches/8.14.5/transforms/e53540216cd034334539edb4dfbc3640/transformed/jetified-window-1.0.0/AndroidManifest.xml:29:13-51
+216            android:required="false" />
+216-->[androidx.window:window:1.0.0] /Users/vishal/.gradle/caches/8.14.5/transforms/e53540216cd034334539edb4dfbc3640/transformed/jetified-window-1.0.0/AndroidManifest.xml:30:13-37
+217
+218        <service
+218-->[androidx.room:room-runtime-android:2.8.4] /Users/vishal/.gradle/caches/8.14.5/transforms/ba49d6bf7e9e972bbed1dafd97655d34/transformed/jetified-room-runtime/AndroidManifest.xml:24:9-28:63
+219            android:name="androidx.room.MultiInstanceInvalidationService"
+219-->[androidx.room:room-runtime-android:2.8.4] /Users/vishal/.gradle/caches/8.14.5/transforms/ba49d6bf7e9e972bbed1dafd97655d34/transformed/jetified-room-runtime/AndroidManifest.xml:25:13-74
+220            android:directBootAware="true"
+220-->[androidx.room:room-runtime-android:2.8.4] /Users/vishal/.gradle/caches/8.14.5/transforms/ba49d6bf7e9e972bbed1dafd97655d34/transformed/jetified-room-runtime/AndroidManifest.xml:26:13-43
+221            android:exported="false" /> <!-- The minimal version code of ARCore APK required for an app using this SDK. -->
+221-->[androidx.room:room-runtime-android:2.8.4] /Users/vishal/.gradle/caches/8.14.5/transforms/ba49d6bf7e9e972bbed1dafd97655d34/transformed/jetified-room-runtime/AndroidManifest.xml:27:13-37
+222        <meta-data
+222-->[com.google.ar:core:1.41.0] /Users/vishal/.gradle/caches/8.14.5/transforms/c942010a4b8a91c67d6056844b1efddd/transformed/jetified-core-1.41.0/AndroidManifest.xml:32:9-34:41
+223            android:name="com.google.ar.core.min_apk_version"
+223-->[com.google.ar:core:1.41.0] /Users/vishal/.gradle/caches/8.14.5/transforms/c942010a4b8a91c67d6056844b1efddd/transformed/jetified-core-1.41.0/AndroidManifest.xml:33:13-62
+224            android:value="232620000" /> <!-- This activity is critical for installing ARCore when it is not already present. -->
+224-->[com.google.ar:core:1.41.0] /Users/vishal/.gradle/caches/8.14.5/transforms/c942010a4b8a91c67d6056844b1efddd/transformed/jetified-core-1.41.0/AndroidManifest.xml:34:13-38
+225        <activity
+225-->[com.google.ar:core:1.41.0] /Users/vishal/.gradle/caches/8.14.5/transforms/c942010a4b8a91c67d6056844b1efddd/transformed/jetified-core-1.41.0/AndroidManifest.xml:36:9-42:80
+226            android:name="com.google.ar.core.InstallActivity"
+226-->[com.google.ar:core:1.41.0] /Users/vishal/.gradle/caches/8.14.5/transforms/c942010a4b8a91c67d6056844b1efddd/transformed/jetified-core-1.41.0/AndroidManifest.xml:37:13-62
+227            android:configChanges="keyboardHidden|orientation|screenSize"
+227-->[com.google.ar:core:1.41.0] /Users/vishal/.gradle/caches/8.14.5/transforms/c942010a4b8a91c67d6056844b1efddd/transformed/jetified-core-1.41.0/AndroidManifest.xml:38:13-74
+228            android:excludeFromRecents="true"
+228-->[com.google.ar:core:1.41.0] /Users/vishal/.gradle/caches/8.14.5/transforms/c942010a4b8a91c67d6056844b1efddd/transformed/jetified-core-1.41.0/AndroidManifest.xml:39:13-46
+229            android:exported="false"
+229-->[com.google.ar:core:1.41.0] /Users/vishal/.gradle/caches/8.14.5/transforms/c942010a4b8a91c67d6056844b1efddd/transformed/jetified-core-1.41.0/AndroidManifest.xml:40:13-37
+230            android:launchMode="singleTop"
+230-->[com.google.ar:core:1.41.0] /Users/vishal/.gradle/caches/8.14.5/transforms/c942010a4b8a91c67d6056844b1efddd/transformed/jetified-core-1.41.0/AndroidManifest.xml:41:13-43
+231            android:theme="@android:style/Theme.Material.Light.Dialog.Alert" />
+231-->[com.google.ar:core:1.41.0] /Users/vishal/.gradle/caches/8.14.5/transforms/c942010a4b8a91c67d6056844b1efddd/transformed/jetified-core-1.41.0/AndroidManifest.xml:42:13-77
+232
+233        <receiver
+233-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/vishal/.gradle/caches/8.14.5/transforms/95a9e9e882c1421adf2b602904923765/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
+234            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+234-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/vishal/.gradle/caches/8.14.5/transforms/95a9e9e882c1421adf2b602904923765/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
+235            android:directBootAware="false"
+235-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/vishal/.gradle/caches/8.14.5/transforms/95a9e9e882c1421adf2b602904923765/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
+236            android:enabled="true"
+236-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/vishal/.gradle/caches/8.14.5/transforms/95a9e9e882c1421adf2b602904923765/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
+237            android:exported="true"
+237-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/vishal/.gradle/caches/8.14.5/transforms/95a9e9e882c1421adf2b602904923765/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
+238            android:permission="android.permission.DUMP" >
+238-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/vishal/.gradle/caches/8.14.5/transforms/95a9e9e882c1421adf2b602904923765/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
+239            <intent-filter>
+239-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/vishal/.gradle/caches/8.14.5/transforms/95a9e9e882c1421adf2b602904923765/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
+240                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+240-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/vishal/.gradle/caches/8.14.5/transforms/95a9e9e882c1421adf2b602904923765/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
+240-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/vishal/.gradle/caches/8.14.5/transforms/95a9e9e882c1421adf2b602904923765/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
+241            </intent-filter>
+242            <intent-filter>
+242-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/vishal/.gradle/caches/8.14.5/transforms/95a9e9e882c1421adf2b602904923765/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
+243                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+243-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/vishal/.gradle/caches/8.14.5/transforms/95a9e9e882c1421adf2b602904923765/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
+243-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/vishal/.gradle/caches/8.14.5/transforms/95a9e9e882c1421adf2b602904923765/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
+244            </intent-filter>
+245            <intent-filter>
+245-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/vishal/.gradle/caches/8.14.5/transforms/95a9e9e882c1421adf2b602904923765/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
+246                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+246-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/vishal/.gradle/caches/8.14.5/transforms/95a9e9e882c1421adf2b602904923765/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
+246-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/vishal/.gradle/caches/8.14.5/transforms/95a9e9e882c1421adf2b602904923765/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
+247            </intent-filter>
+248            <intent-filter>
+248-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/vishal/.gradle/caches/8.14.5/transforms/95a9e9e882c1421adf2b602904923765/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
+249                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+249-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/vishal/.gradle/caches/8.14.5/transforms/95a9e9e882c1421adf2b602904923765/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
+249-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/vishal/.gradle/caches/8.14.5/transforms/95a9e9e882c1421adf2b602904923765/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:50:25-92
+250            </intent-filter>
+251        </receiver>
+252    </application>
+253
+254</manifest>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/content_padding"
+    android:visibility="gone"
+    app:cardCornerRadius="24dp"
+    app:cardElevation="8dp"
+    app:strokeColor="@color/outlineVariant"
+    app:strokeWidth="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/item_spacing"
+        android:gravity="center_vertical">
+
+        <ImageButton
+            android:id="@+id/btn_undo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_undo"
+            android:contentDescription="@string/undo"
+            android:tint="@color/icon_tint" />
+
+        <ImageButton
+            android:id="@+id/btn_redo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_redo"
+            android:contentDescription="@string/redo"
+            android:tint="@color/icon_tint" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="24dp"
+            android:layout_marginHorizontal="@dimen/item_spacing"
+            android:background="@color/outlineVariant" />
+
+        <ImageButton
+            android:id="@+id/btn_brush"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_brush"
+            android:contentDescription="@string/brush_size"
+            android:tint="@color/icon_tint" />
+
+        <ImageButton
+            android:id="@+id/btn_color"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_color_lens"
+            android:contentDescription="@string/color_picker"
+            android:tint="@color/icon_tint" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/btn_guides"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_grid_on"
+            android:contentDescription="@string/guides"
+            android:tint="@color/icon_tint" />
+
+        <ImageButton
+            android:id="@+id/btn_clear"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_close"
+            android:contentDescription="@string/clear"
+            android:tint="@color/color_error" />
+
+        <ImageButton
+            android:id="@+id/btn_save"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_check"
+            android:contentDescription="@string/save"
+            android:tint="@color/color_primary" />
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

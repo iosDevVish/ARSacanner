@@ -1,0 +1,274 @@
+package com.ardrawing.ardrawing.renderer
+
+import android.content.Context
+import android.opengl.GLES30
+import android.opengl.Matrix
+import com.google.ar.core.Plane
+import com.google.ar.sceneform.FrameTime
+import com.google.ar.sceneform.Node
+import com.google.ar.sceneform.math.Vector3
+import com.google.ar.sceneform.rendering.Renderable
+import com.google.ar.sceneform.rendering.ViewRenderable
+import com.ardrawing.ardrawing.drawing.DrawingGuide
+import com.ardrawing.ardrawing.util.Point3D
+import java.nio.ByteBuffer
+import java.nio.ByteOrder
+import java.nio.FloatBuffer
+
+class GuideRenderer(private val context: Context) : Node() {
+    private var program: Int = 0
+    private var mvpMatrix: FloatArray = FloatArray(16)
+    private var currentGuide: DrawingGuide? = null
+    private val guideVertices = mutableMapOf<DrawingGuide, FloatBuffer>()
+    private var opacity = 0.6f
+    private var lineWidth = 2f
+
+    init {
+        createProgram()
+        generateGuideGeometry()
+    }
+
+    private fun createProgram() {
+        val vertexShader = loadShader(GLES30.GL_VERTEX_SHADER, vertexShaderCode)
+        val fragmentShader = loadShader(GLES30.GL_FRAGMENT_SHADER, fragmentShaderCode)
+        program = GLES30.glCreateProgram()
+        GLES30.glAttachShader(program, vertexShader)
+        GLES30.glAttachShader(program, fragmentShader)
+        GLES30.glLinkProgram(program)
+    }
+
+    private fun loadShader(type: Int, code: String): Int {
+        val shader = GLES30.glCreateShader(type)
+        GLES30.glShaderSource(shader, code)
+        GLES30.glCompileShader(shader)
+        return shader
+    }
+
+    private fun generateGuideGeometry() {
+        for (guide in DrawingGuide.ALL) {
+            val vertices = when (guide) {
+                is DrawingGuide.GRID -> generateGrid()
+                is DrawingGuide.PERSPECTIVE -> generatePerspective()
+                is DrawingGuide.CIRCLE -> generateCircle()
+                is DrawingGuide.LINE -> generateLine()
+                is DrawingGuide.SYMMETRY -> generateSymmetry()
+                is DrawingGuide.PERSPECTIVE_GRID -> generatePerspectiveGrid()
+                is DrawingGuide.ISOMETRIC -> generateIsometric()
+                is DrawingGuide.GOLDEN_RATIO -> generateGoldenRatio()
+                is DrawingGuide.RULE_OF_THIRDS -> generateRuleOfThirds()
+                is DrawingGuide.SPIRAL -> generateSpiral()
+            }
+            guideVertices[guide] = ByteBuffer.allocateDirect(vertices.size * 4)
+                .order(ByteOrder.nativeOrder())
+                .asFloatBuffer()
+                .apply { put(vertices); position(0) }
+        }
+    }
+
+    private fun generateGrid(): FloatArray {
+        val vertices = mutableListOf<Float>()
+        val size = 1f
+        val divisions = 10
+        val step = size * 2 / divisions
+
+        for (i in 0..divisions) {
+            val offset = -size + i * step
+            vertices.addAll(listOf(offset, -size, 0f, offset, size, 0f))
+            vertices.addAll(listOf(-size, offset, 0f, size, offset, 0f))
+        }
+        return vertices.toFloatArray()
+    }
+
+    private fun generatePerspective(): FloatArray {
+        val vertices = mutableListOf<Float>()
+        val centerX = 0f
+        val centerY = 0f
+        val horizon = 0.5f
+
+        for (i in -5..5) {
+            val x = i * 0.2f
+            vertices.addAll(listOf(x, -1f, 0f, centerX, horizon, 0f))
+        }
+        for (i in 1..5) {
+            val y = -1f + i * 0.4f
+            vertices.addAll(listOf(-1f, y, 0f, centerX, horizon, 0f))
+            vertices.addAll(listOf(1f, y, 0f, centerX, horizon, 0f))
+        }
+        return vertices.toFloatArray()
+    }
+
+    private fun generateCircle(): FloatArray {
+        val vertices = mutableListOf<Float>()
+        val radius = 0.5f
+        val segments = 32
+
+        for (i in 0..32) {
+            val angle = 2 * Math.PI * i / 32
+            vertices.addAll(listOf(
+                (radius * Math.cos(angle)).toFloat(),
+                (radius * Math.sin(angle)).toFloat(),
+                0f
+            ))
+        }
+        return vertices.toFloatArray()
+    }
+
+    private fun generateLine(): FloatArray {
+        return floatArrayOf(-1f, 0f, 0f, 1f, 0f, 0f)
+    }
+
+    private fun generateSymmetry(): FloatArray {
+        return floatArrayOf(0f, -1f, 0f, 0f, 1f, 0f)
+    }
+
+    private fun generatePerspectiveGrid(): FloatArray {
+        val vertices = mutableListOf<Float>()
+        val horizon = 0.3f
+        val vanishingPoint = 0f
+
+        for (i in 1..8) {
+            val y = -1f + i * 0.25f
+            val scale = (horizon - y) / (horizon + 1f)
+            val left = -scale
+            val right = scale
+            vertices.addAll(listOf(left, y, 0f, right, y, 0f))
+        }
+
+        for (i in -4..4) {
+            val x = i * 0.25f
+            vertices.addAll(listOf(x, -1f, 0f, vanishingPoint, horizon, 0f))
+        }
+        return vertices.toFloatArray()
+    }
+
+    private fun generateIsometric(): FloatArray {
+        val vertices = mutableListOf<Float>()
+        val angle = Math.PI / 6
+        val cos30 = Math.cos(angle).toFloat()
+        val sin30 = Math.sin(angle).toFloat()
+
+        for (i in -5..5) {
+            val x = i * 0.2f
+            vertices.addAll(listOf(
+                x * cos30, x * sin30 - 1f, 0f,
+                x * cos30, x * sin30 + 1f, 0f
+            ))
+            vertices.addAll(listOf(
+                -1f * cos30, -1f * sin30 + x, 0f,
+                1f * cos30, 1f * sin30 + x, 0f
+            ))
+        }
+        return vertices.toFloatArray()
+    }
+
+    private fun generateGoldenRatio(): FloatArray {
+        val vertices = mutableListOf<Float>()
+        val phi = 1.618f
+        var a = 0.5f
+        var b = a / phi
+
+        for (i in 0..5) {
+            vertices.addAll(listOf(-a, -a, 0f, a, -a, 0f, a, a, 0f, -a, a, 0f, -a, -a, 0f))
+            val temp = a
+            a = b
+            b = temp - b
+        }
+        return vertices.toFloatArray()
+    }
+
+    private fun generateRuleOfThirds(): FloatArray {
+        return floatArrayOf(
+            -1f, -1f/3f, 0f, 1f, -1f/3f, 0f,
+            -1f, 1f/3f, 0f, 1f, 1f/3f, 0f,
+            -1f/3f, -1f, 0f, -1f/3f, 1f, 0f,
+            1f/3f, -1f, 0f, 1f/3f, 1f, 0f
+        )
+    }
+
+    private fun generateSpiral(): FloatArray {
+        val vertices = mutableListOf<Float>()
+        val phi = 1.618f
+        var r = 0.05f
+        var angle = 0f
+
+        for (i in 0..100) {
+            val x = r * Math.cos(angle).toFloat()
+            val y = r * Math.sin(angle).toFloat()
+            vertices.addAll(listOf(x, y, 0f))
+            angle += 0.2f
+            r *= 1.02f
+        }
+        return vertices.toFloatArray()
+    }
+
+    fun setMVPMatrix(matrix: FloatArray) {
+        mvpMatrix = matrix.clone()
+    }
+
+    fun setGuide(guide: DrawingGuide?) {
+        currentGuide = guide
+    }
+
+    fun setOpacity(opacity: Float) {
+        this.opacity = opacity
+    }
+
+    fun setLineWidth(width: Float) {
+        this.lineWidth = width
+    }
+
+    override fun render(renderContext: com.google.ar.sceneform.RenderContext?) {
+        if (currentGuide == null || program == 0) return
+
+        val vertices = guideVertices[currentGuide!!] ?: return
+
+        GLES30.glUseProgram(program)
+        val mvpHandle = GLES30.glGetUniformLocation(program, "u_MVPMatrix")
+        GLES30.glUniformMatrix4fv(mvpHandle, 1, false, mvpMatrix, 0)
+
+        val colorHandle = GLES30.glGetUniformLocation(program, "u_Color")
+        val opacityHandle = GLES30.glGetUniformLocation(program, "u_Opacity")
+        val positionHandle = GLES30.glGetAttribLocation(program, "a_Position")
+
+        GLES30.glUniformMatrix4fv(mvpHandle, 1, false, mvpMatrix, 0)
+        GLES30.glUniform4fv(colorHandle, 1, floatArrayOf(0.4f, 0.31f, 0.64f, 1f), 0)
+        GLES30.glUniform1f(opacityHandle, opacity)
+
+        GLES30.glEnableVertexAttribArray(positionHandle)
+        GLES30.glVertexAttribPointer(positionHandle, 3, GLES30.GL_FLOAT, false, 12, vertices)
+
+        val mode = when (currentGuide) {
+            is DrawingGuide.CIRCLE, is DrawingGuide.GOLDEN_RATIO, is DrawingGuide.SPIRAL -> GLES30.GL_LINE_STRIP
+            is DrawingGuide.GRID, is DrawingGuide.PERSPECTIVE, is DrawingGuide.PERSPECTIVE_GRID, is DrawingGuide.ISOMETRIC, is DrawingGuide.RULE_OF_THIRDS -> GLES30.GL_LINES
+            is DrawingGuide.LINE, is DrawingGuide.SYMMETRY -> GLES30.GL_LINES
+        }
+
+        GLES30.glLineWidth(lineWidth)
+        GLES30.glDrawArrays(mode, 0, vertices.capacity() / 3)
+        GLES30.glDisableVertexAttribArray(positionHandle)
+    }
+
+    fun clear() {
+        guideVertices.values.forEach { it.clear() }
+        guideVertices.clear()
+    }
+
+    companion object {
+        private const val vertexShaderCode = """
+            uniform mat4 u_MVPMatrix;
+            attribute vec4 a_Position;
+            void main() {
+                gl_Position = u_MVPMatrix * a_Position;
+            }
+        """.trimIndent()
+
+        private const val fragmentShaderCode = """
+            precision mediump float;
+            uniform vec4 u_Color;
+            uniform float u_Opacity;
+            void main() {
+                gl_FragColor = vec4(u_Color.rgb, u_Color.a * u_Opacity);
+            }
+        """.trimIndent()
+    }
+}

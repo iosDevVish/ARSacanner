@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/settings_title"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switchBrushPreview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/setting_brush_preview"
+        android:layout_marginBottom="8dp" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switchAutoSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/setting_auto_save"
+        android:layout_marginBottom="8dp" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switchHapticFeedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/setting_haptic_feedback"
+        android:layout_marginBottom="8dp" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switchShowFps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/setting_show_fps"
+        android:layout_marginBottom="8dp" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switchPlaneDetection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/setting_plane_detection"
+        android:layout_marginBottom="8dp" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switchAutoRotateCanvas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/setting_auto_rotate_canvas"
+        android:layout_marginBottom="8dp" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switchLessonHints"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/setting_lesson_hints"
+        android:layout_marginBottom="8dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginVertical="16dp"
+        android:background="@color/divider" />
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/sliderDrawingPlaneHeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:valueFrom="0.1"
+        android:valueTo="2.0"
+        android:value="0.5"
+        android:stepSize="0.1" />
+
+    <TextView
+        android:id="@+id/tvPlaneHeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Drawing Height: 0.5m"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/sliderGuideOpacity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:valueFrom="0.1"
+        android:valueTo="1.0"
+        android:value="0.6"
+        android:stepSize="0.1" />
+
+    <TextView
+        android:id="@+id/tvGuideOpacity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guide Opacity: 60%"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/sliderBrushSmoothing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:valueFrom="0"
+        android:valueTo="10"
+        android:value="5"
+        android:stepSize="1" />
+
+    <TextView
+        android:id="@+id/tvBrushSmoothing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Brush Smoothing: 5"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+</LinearLayout>

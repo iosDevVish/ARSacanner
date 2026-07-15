@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/Theme.ARDrawing.AppBarOverlay">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/toolbar_bg"
+                app:titleTextColor="@color/onSurface" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/content_padding">
+
+                <TextView
+                    android:id="@+id/tvLessonTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/onSurface"
+                    android:layout_marginBottom="@dimen/item_spacing" />
+
+                <TextView
+                    android:id="@+id/tvLessonDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/onSurfaceVariant"
+                    android:layout_marginBottom="@dimen/section_spacing" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    style="@android:style/Widget.ProgressBar.Horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/lesson_progress_height"
+                    android:progressTint="@color/lesson_progress_fill"
+                    android:progressBackgroundTint="@color/lesson_progress_bg"
+                    android:max="100"
+                    android:progress="0"
+                    android:layout_marginBottom="@dimen/section_spacing" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvSteps"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false"
+                    android:layout_marginBottom="@dimen/section_spacing" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/section_spacing">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnStartLesson"
+                        style="@style/Widget.ARDrawing.Button.Primary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/button_height"
+                        android:layout_marginEnd="@dimen/item_spacing"
+                        android:text="@string/start_lesson" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnNextStep"
+                        style="@style/Widget.ARDrawing.Button.Outline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/button_height"
+                        android:text="@string/next_step"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

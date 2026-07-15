@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/content_padding"
+    app:cardCornerRadius="@dimen/bottom_sheet_radius"
+    app:cardElevation="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/content_padding">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/guides"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/onSurface"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/item_spacing" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvGuides"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false" />
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/sliderGuideOpacity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:valueFrom="@dimen/guide_opacity_min"
+            android:valueTo="@dimen/guide_opacity_max"
+            android:value="@dimen/guide_opacity_default"
+            android:stepSize="0.1"
+            android:layout_marginTop="@dimen/item_spacing" />
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

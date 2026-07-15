@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/content_padding"
+    app:cardCornerRadius="@dimen/bottom_sheet_radius"
+    app:cardElevation="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/content_padding">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/brush_size"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/onSurface"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/item_spacing" />
+
+        <TextView
+            android:id="@+id/tvBrushSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Size: 8px"
+            android:textSize="14sp"
+            android:textColor="@color/onSurfaceVariant"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/item_spacing" />
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/sliderBrushSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:valueFrom="1"
+            android:valueTo="50"
+            android:value="8"
+            android:stepSize="1" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="@dimen/section_spacing"
+            android:background="@color/divider" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/brush_hardness"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/onSurface"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/item_spacing" />
+
+        <TextView
+            android:id="@+id/tvBrushHardness"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hardness: 80%"
+            android:textSize="14sp"
+            android:textColor="@color/onSurfaceVariant"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/item_spacing" />
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/sliderBrushHardness"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:valueFrom="0"
+            android:valueTo="100"
+            android:value="80"
+            android:stepSize="5" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="@dimen/section_spacing"
+            android:background="@color/divider" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/brush_smoothing"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/onSurface"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/item_spacing" />
+
+        <TextView
+            android:id="@+id/tvBrushSmoothing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Smoothing: 5"
+            android:textSize="14sp"
+            android:textColor="@color/onSurfaceVariant"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/item_spacing" />
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/sliderBrushSmoothing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:valueFrom="0"
+            android:valueTo="10"
+            android:value="5"
+            android:stepSize="1" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="@dimen/section_spacing"
+            android:background="@color/divider" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/brush_opacity"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/onSurface"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/item_spacing" />
+
+        <TextView
+            android:id="@+id/tvBrushOpacity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Opacity: 100%"
+            android:textSize="14sp"
+            android:textColor="@color/onSurfaceVariant"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/item_spacing" />
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/sliderBrushOpacity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:valueFrom="0.1"
+            android:valueTo="1.0"
+            android:value="1.0"
+            android:stepSize="0.1" />
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>
